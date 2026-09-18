@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>校园小猫图鉴</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Supabase 客户端（UMD 全局变量 supabase） -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/"></a>
+      <nav class="nav">
+        <a href="#/">猫咪</a>
+        <a href="#/adopt">领养</a>
+        <a href="#/upload">上传</a>
+        <a href="#/campaigns">筹款</a>
+        <a href="#/admin">管理</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="app"><div class="loading">加载中…</div></main>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-backdrop" data-action="close-modal"></div>
+    <div class="modal-card" id="modal-card"></div>
+  </div>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="src/config.js"></script>
+  <script src="src/supabase.js"></script>
+  <script src="src/db.js"></script>
+  <script src="src/auth.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
